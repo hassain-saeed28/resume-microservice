@@ -1,0 +1,213 @@
+{
+    "basics": {
+        "name": "Hassain Alsayhah",
+        "label": "Software Engineering Graduate",
+        "email": "hassain.alsayhah@gmail.com",
+        "phone": "+966565428928",
+        "location": {
+            "address": "As Sahafah Dist. Building No. 8287",
+            "city": "Al Hafuf"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "url": "linkedin.com/in/hassain-alsayhah"
+            }
+        ],
+        "summary": "Software engineering graduate equipped with strong software development foundations and expertise in artificial intelligence. Proven success in project management and implementing AI solutions. Demonstrated track record of leading technical teams, managing vendor relationships, and delivering complex projects. Strong communicator skilled at bridging technical and business needs. Passionate about teaching and committed to continuous learning."
+    },
+    "education": [
+        {
+            "institution": "King Fahd University of Petroleum and Minerals (KFUPM)",
+            "area": "Software Engineering",
+            "studyType": "Bachelor's Degree",
+            "startDate": "2020-08",
+            "endDate": "2025-05",
+            "score": "with Honors",
+            "courses": []
+        },
+        {
+            "institution": "King Abdullah University of Science and Technology (KAUST)",
+            "area": "Artificial Intelligence",
+            "studyType": "Summer Program",
+            "startDate": "2023-07",
+            "endDate": "2023-08",
+            "score": "",
+            "courses": []
+        }
+    ],
+    "experience": [
+        {
+            "company": "King Salman Global Academy for Arabic Language (KSGAAL)",
+            "position": "Project Manager",
+            "startDate": "2024-08",
+            "endDate": "Present",
+            "highlights": [
+                "Leading the development of an educational series focused on Arabic NLP concepts",
+                "Orchestrating end to end production of educational content, from expert sourcing to platform deployment",
+                "Managing vendor relationships and negotiating contracts, achieving remarkable cost savings"
+            ]
+        },
+        {
+            "company": "King Salman Global Academy for Arabic Language (KSGAAL)",
+            "position": "Software Engineer",
+            "startDate": "2024-06",
+            "endDate": "2024-08",
+            "highlights": [
+                "Developed integrated database and AI solutions for KSGAAL platforms",
+                "Implemented Retrieval augmented generation (RAG) modules with LLMs",
+                "Integrated the robot Pepper with RAGs and LLMs to make it interact with humans"
+            ]
+        }
+    ],
+    "teaching": [
+        {
+            "institution": "King Abdullah University of Science and Technology (KAUST)",
+            "position": "Teaching Assistant",
+            "startDate": "2023-03",
+            "endDate": "Seasonal",
+            "highlights": [
+                "Delivered hands-on education in fundamental AI concepts including regression, NNs, and CNNs",
+                "Created practical exercises to reinforce student understanding of core machine learning concepts",
+                "Assisted instructors with curriculum delivery and managed student exams, including grading"
+            ]
+        }
+    ],
+    "research": [
+        {
+            "institution": "SDAIA-KFUPM Joint Research Center for Artificial Intelligence (JRCAI)",
+            "position": "Undergraduate AI Researcher",
+            "startDate": "2024-10",
+            "endDate": "2025-03",
+            "highlights": [
+                "Led research on token reduction through Arabic transliteration optimization using instruction tuning",
+                "Benchmarked Arabic language processing across major LLMs (GPT-4, Claude, ALLaM, Llama 3.1)",
+                "Implementing various transliteration methods to improve LLM efficiency"
+            ]
+        },
+        {
+            "institution": "King Abdullah University of Science and Technology (KAUST)",
+            "position": "Summer AI Researcher",
+            "startDate": "2023-07",
+            "endDate": "2023-08",
+            "highlights": [
+                "Completed 320+ hours of specialized AI training in Generative Models, ML, RL, CV, and NLP",
+                "Conducted research on how using new data augmentation strategies from multiple domains affects fairness and accuracy in deep neural networks for image classifiers"
+            ]
+        }
+    ],
+    "skills": {
+        "soft": [
+            "Leadership",
+            "Ability to learn, adapt, and grow",
+            "Time management",
+            "Effective communication",
+            "Teams building and managing",
+            "Budgets management",
+            "Critical thinking",
+            "Teaching",
+            "Public speaking & presenting"
+        ],
+        "technical": {
+            "ml_ai": [
+                "Scikit-learn",
+                "PyTorch",
+                "TensorFlow",
+                "Hugging Face"
+            ],
+            "data": [
+                "Pandas",
+                "NumPy",
+                "MongoDB",
+                "SQL"
+            ],
+            "programming": [
+                "Python",
+                "Java",
+                "JavaScript",
+                "Flutter"
+            ],
+            "devops": [
+                "Docker",
+                "Git & GitHub"
+            ],
+            "project_management": [
+                "Notion",
+                "Trello"
+            ]
+        }
+    },
+    "leadership": [
+        {
+            "organization": "Computer Club, King Fahd University of Petroleum and Minerals",
+            "position": "President",
+            "startDate": "2023-09",
+            "endDate": "2024-09",
+            "highlights": [
+                "Led 70+ member technical community, organizing 50+ events and workshops",
+                "Managed club operations using Notion for planning and collaboration",
+                "Achieved Best Club and Best Leader awards under my leadership"
+            ]
+        },
+        {
+            "organization": "Google Developer Students Clubs",
+            "position": "Consultant",
+            "startDate": "2023-08",
+            "endDate": "2024-08",
+            "highlights": [
+                "Advised club leadership on strategic planning and event organization",
+                "Facilitated collaboration between the club and university administration"
+            ]
+        },
+        {
+            "organization": "KFUPM Institute for Knowledge Exchange",
+            "position": "Volunteer",
+            "startDate": "2021-03",
+            "endDate": "2024-12",
+            "highlights": [
+                "Helped in Coordinating and executing diverse, world class academic conferences, workshops, and seminars",
+                "Support community outreach and student engagement initiatives"
+            ]
+        }
+    ],
+    "honors": [
+        "Achieved Honors Class for 5 semesters (2021-2024)",
+        "Dean's Honor List (2024)",
+        "Best Student Club Leader & Best Club Awards in 2024 from KFUPM",
+        "Certified Associate in Project Management (2024)",
+        "Second Place, AWS DeepRacer Student League Saudi Arabia 2024"
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Advanced (TOEFL iBT: 95)"
+        },
+        {
+            "language": "Arabic",
+            "fluency": "Native"
+        }
+    ],
+    "references": [
+        {
+            "name": "Dr. Naeemullah Khan",
+            "position": "Deputy Director of KAUST Academy, Instructional Assistant Professor In Artificial Intelligence",
+            "company": "King Abdullah University of Science and Technology (KAUST)",
+            "email": "naeemullah.khan@kaust.edu.sa",
+            "relationship": "student and a teaching assistant"
+        },
+        {
+            "name": "Dr. Abdulrahman Alosaimy",
+            "position": "Director of Artificial Intelligence Department",
+            "company": "King Salman Global Academy for Arabic Language (KSGAAL)",
+            "email": "Aalosaimy@ksaa.gov.sa",
+            "relationship": "direct supervisor"
+        },
+        {
+            "name": "Dr. Sajjad Mahmood",
+            "position": "Associate Professor",
+            "company": "King Fahd University of Petroleum and Minerals, Information & Computer Science Department",
+            "email": "smahmood@kfupm.edu.sa",
+            "relationship": "student and academic advisor"
+        }
+    ]
+}
