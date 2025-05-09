@@ -1,0 +1,33 @@
+[
+    {
+        "organization": "Computer Club, King Fahd University of Petroleum and Minerals",
+        "position": "President",
+        "startDate": "2023-09",
+        "endDate": "2024-09",
+        "highlights": [
+            "Led 70+ member technical community, organizing 50+ events and workshops",
+            "Managed club operations using Notion for planning and collaboration",
+            "Achieved Best Club and Best Leader awards under my leadership"
+        ]
+    },
+    {
+        "organization": "Google Developer Students Clubs",
+        "position": "Consultant",
+        "startDate": "2023-08",
+        "endDate": "2024-08",
+        "highlights": [
+            "Advised club leadership on strategic planning and event organization",
+            "Facilitated collaboration between the club and university administration"
+        ]
+    },
+    {
+        "organization": "KFUPM Institute for Knowledge Exchange",
+        "position": "Volunteer",
+        "startDate": "2021-03",
+        "endDate": "2024-12",
+        "highlights": [
+            "Helped in Coordinating and executing diverse, world class academic conferences, workshops, and seminars",
+            "Support community outreach and student engagement initiatives"
+        ]
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "institution": "King Fahd University of Petroleum and Minerals (KFUPM)",
+        "area": "Software Engineering",
+        "studyType": "Bachelor's Degree",
+        "startDate": "2020-08",
+        "endDate": "2025-05",
+        "score": "with Honors",
+        "courses": []
+    },
+    {
+        "institution": "King Abdullah University of Science and Technology (KAUST)",
+        "area": "Artificial Intelligence",
+        "studyType": "Summer Program",
+        "startDate": "2023-07",
+        "endDate": "2023-08",
+        "score": "",
+        "courses": []
+    }
+]

@@ -1,12 +1,13 @@
-name: CD Pipeline
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  build:
-    name: Build
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,76 +20,55 @@ jobs:
           node-version: 18
           cache: "npm"
 
-      - name: Install backend dependencies
-        run: cd backend && npm ci
-
-      - name: Build backend
-        run: cd backend && npm run build
-
-      - name: Install frontend dependencies
+      - name: Install dependencies
         run: cd frontend && npm ci
 
-      - name: Build frontend
+      - name: Run linting
+        run: cd frontend && npm run lint
+
+      - name: Run tests
+        run: cd frontend && npm test -- --watchAll=false
+
+      - name: Build
+        if: github.event_name != 'pull_request'
         run: cd frontend && npm run build
 
-      - name: Upload build artifacts
+      - name: Upload build artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v3
         with:
-          name: build-artifacts
-          path: |
-            backend/dist/
-            frontend/build/
+          name: build-files
+          path: frontend/build
 
-  deploy-backend:
-    name: Deploy Backend to Render
-    needs: build
+  deploy:
+    needs: build-and-test
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
-    environment:
-      name: production
-      url: https://resume-microservice-api.onrender.com
-
-    steps:
-      - name: Deploy to Render
-        # In a real project, you would use a proper Render deployment action
-        # This is a placeholder to simulate the deployment
-        run: |
-          echo "Deploying backend to Render..."
-          # Render deployment would happen here
-          echo "Backend deployed to https://resume-microservice-api.onrender.com"
-
-  deploy-frontend:
-    name: Deploy Frontend to GitHub Pages
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: production
-      url: ${{ steps.deployment.outputs.page_url }}
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
-      pages: write
-      id-token: write
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build-files
+          path: build
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
-      - name: Download build artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: build-artifacts
-          path: artifact
-
-      - name: Copy frontend build to deploy directory
-        run: |
-          mkdir -p ./_site
-          cp -r artifact/frontend/build/* ./_site/
-
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
+        with:
+          path: "build"
 
       - name: Deploy to GitHub Pages
         id: deployment

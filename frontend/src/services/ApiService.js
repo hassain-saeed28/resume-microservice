@@ -1,10 +1,11 @@
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000/api';
+// File: frontend/src/services/ApiService.js
+const API_BASE_URL = process.env.PUBLIC_URL || '';
 
 class ApiService {
   // Get full resume data
   static async getFullResume() {
     try {
-      const response = await fetch(`${API_BASE_URL}/resume`);
+      const response = await fetch(`${API_BASE_URL}/data/resume.json`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -18,7 +19,7 @@ class ApiService {
   // Get education data
   static async getEducation() {
     try {
-      const response = await fetch(`${API_BASE_URL}/resume/education`);
+      const response = await fetch(`${API_BASE_URL}/data/education.json`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -32,7 +33,7 @@ class ApiService {
   // Get experience data
   static async getExperience() {
     try {
-      const response = await fetch(`${API_BASE_URL}/resume/experience`);
+      const response = await fetch(`${API_BASE_URL}/data/experience.json`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -46,7 +47,7 @@ class ApiService {
   // Get skills data
   static async getSkills() {
     try {
-      const response = await fetch(`${API_BASE_URL}/resume/skills`);
+      const response = await fetch(`${API_BASE_URL}/data/skills.json`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -60,7 +61,7 @@ class ApiService {
   // Get leadership data
   static async getLeadership() {
     try {
-      const response = await fetch(`${API_BASE_URL}/resume/leadership`);
+      const response = await fetch(`${API_BASE_URL}/data/leadership.json`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

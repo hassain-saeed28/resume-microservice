@@ -1,0 +1,24 @@
+[
+    {
+        "company": "King Salman Global Academy for Arabic Language (KSGAAL)",
+        "position": "Project Manager",
+        "startDate": "2024-08",
+        "endDate": "Present",
+        "highlights": [
+            "Leading the development of an educational series focused on Arabic NLP concepts",
+            "Orchestrating end to end production of educational content, from expert sourcing to platform deployment",
+            "Managing vendor relationships and negotiating contracts, achieving remarkable cost savings"
+        ]
+    },
+    {
+        "company": "King Salman Global Academy for Arabic Language (KSGAAL)",
+        "position": "Software Engineer",
+        "startDate": "2024-06",
+        "endDate": "2024-08",
+        "highlights": [
+            "Developed integrated database and AI solutions for KSGAAL platforms",
+            "Implemented Retrieval augmented generation (RAG) modules with LLMs",
+            "Integrated the robot Pepper with RAGs and LLMs to make it interact with humans"
+        ]
+    }
+]

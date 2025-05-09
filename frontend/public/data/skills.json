@@ -1,0 +1,41 @@
+{
+    "soft": [
+        "Leadership",
+        "Ability to learn, adapt, and grow",
+        "Time management",
+        "Effective communication",
+        "Teams building and managing",
+        "Budgets management",
+        "Critical thinking",
+        "Teaching",
+        "Public speaking & presenting"
+    ],
+    "technical": {
+        "ml_ai": [
+            "Scikit-learn",
+            "PyTorch",
+            "TensorFlow",
+            "Hugging Face"
+        ],
+        "data": [
+            "Pandas",
+            "NumPy",
+            "MongoDB",
+            "SQL"
+        ],
+        "programming": [
+            "Python",
+            "Java",
+            "JavaScript",
+            "Flutter"
+        ],
+        "devops": [
+            "Docker",
+            "Git & GitHub"
+        ],
+        "project_management": [
+            "Notion",
+            "Trello"
+        ]
+    }
+}
