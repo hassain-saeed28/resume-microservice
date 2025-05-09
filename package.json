@@ -1,31 +1,53 @@
 {
-    "name": "resume-microservice",
-    "version": "1.0.0",
-    "description": "Resume Microservice with DevOps practices",
-    "main": "index.js",
-    "scripts": {
-        "install:all": "npm run install:backend && npm run install:frontend",
-        "install:backend": "cd backend && npm install",
-        "install:frontend": "cd frontend && npm install",
-        "start": "docker-compose up",
-        "start:dev": "docker-compose up -d",
-        "stop": "docker-compose down",
-        "test": "npm run test:backend && npm run test:frontend",
-        "test:backend": "cd backend && npm test",
-        "test:frontend": "cd frontend && npm test",
-        "lint": "npm run lint:backend && npm run lint:frontend",
-        "lint:backend": "cd backend && npm run lint",
-        "lint:frontend": "cd frontend && npm run lint",
-        "build": "npm run build:backend && npm run build:frontend",
-        "build:backend": "cd backend && docker build -t resume-microservice-backend .",
-        "build:frontend": "cd frontend && docker build -t resume-microservice-frontend ."
+    "name": "resume-microservice-frontend",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://hassain-saeed28.github.io/resume-microservice",
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.22.1",
+        "react-scripts": "5.0.1",
+        "web-vitals": "^2.1.4"
     },
-    "keywords": [
-        "resume",
-        "microservice",
-        "devops",
-        "github-actions"
-    ],
-    "author": "Hassain Alsayhah",
-    "license": "MIT"
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "lint": "eslint src",
+        "lint:fix": "eslint src --fix",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "eslint": "^8.56.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-jsx-a11y": "^6.8.0",
+        "eslint-plugin-react": "^7.33.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "gh-pages": "^6.1.1"
+    }
 }
