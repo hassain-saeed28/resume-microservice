@@ -1,0 +1,31 @@
+{
+    "name": "resume-microservice",
+    "version": "1.0.0",
+    "description": "Resume Microservice with DevOps practices",
+    "main": "index.js",
+    "scripts": {
+        "install:all": "npm run install:backend && npm run install:frontend",
+        "install:backend": "cd backend && npm install",
+        "install:frontend": "cd frontend && npm install",
+        "start": "docker-compose up",
+        "start:dev": "docker-compose up -d",
+        "stop": "docker-compose down",
+        "test": "npm run test:backend && npm run test:frontend",
+        "test:backend": "cd backend && npm test",
+        "test:frontend": "cd frontend && npm test",
+        "lint": "npm run lint:backend && npm run lint:frontend",
+        "lint:backend": "cd backend && npm run lint",
+        "lint:frontend": "cd frontend && npm run lint",
+        "build": "npm run build:backend && npm run build:frontend",
+        "build:backend": "cd backend && docker build -t resume-microservice-backend .",
+        "build:frontend": "cd frontend && docker build -t resume-microservice-frontend ."
+    },
+    "keywords": [
+        "resume",
+        "microservice",
+        "devops",
+        "github-actions"
+    ],
+    "author": "Hassain Alsayhah",
+    "license": "MIT"
+}
